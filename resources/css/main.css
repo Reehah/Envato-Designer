@@ -61,6 +61,11 @@ header nav .collapse ul .nav-item:last-child .nav-link:hover {
   color: #eee;
 }
 
+header nav button {
+  position: relative;
+  z-index: 2;
+}
+
 /*landing*/
 
 .ellipse {
@@ -70,6 +75,7 @@ header nav .collapse ul .nav-item:last-child .nav-link:hover {
   top: -45%;
   background-color: #333;
   position: absolute;
+  z-index: 1;
   border-radius: 100%;
 }
 
@@ -491,6 +497,10 @@ header nav .collapse ul .nav-item:last-child .nav-link:hover {
   font-size: 2.4rem;
 }
 
+.getInTouch .row .left p i {
+  margin-right: 1rem;
+}
+
 
 .getInTouch .row .left p:nth-child(3) {
   padding-bottom: 3rem;
@@ -567,7 +577,10 @@ footer nav ul li {
 
 footer nav ul li .socials li i {
   margin-right: 1rem;
-  ;
+}
+
+footer nav ul li .socials li i:first-child {
+  margin-right: 0;
 }
 
 footer nav ul li ul {
@@ -633,22 +646,30 @@ footer nav ul .active {
     border-width: 2px;
   }
 
+  .header .navbar-collapse {
+    z-index: 10000;
+    background-color: #f2f2f2;
+    width: 50%;
+  }
+
   /*landing*/
 
   .ellipse {
-    left: -50%;
-    top: -185%;
+    left: -45%;
+    top: -210%;
   }
 
   .landing {
-    /* text-align: center; */
     padding: 0 10%;
     flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
   }
 
   .landing .right img {
     padding: 15% 0 0 0;
     width: 90%;
+    margin: 0 auto;
   }
 
   .landing .left h1 {
@@ -724,11 +745,12 @@ footer nav ul .active {
   }
 
   .resume .row .left {
-    padding-right: 10%;
+    padding-right: 5%;
   }
 
   .resume .row .right {
     padding-left: 4%;
+    padding-right: 5%;
   }
 
   .resume .row .card .card-body {
@@ -761,5 +783,227 @@ footer nav ul .active {
 
   .resume .row .card .card-footer {
     padding: 0;
+  }
+
+  .resume .row1 .card .card-title {
+    font-size: 1.6rem;
+  }
+
+  .resume .row2 .heading {
+    padding: 3.9rem 0 1.8rem;
+    font-size: 1.8rem;
+  }
+
+  .resume .row2 .left .skills h4 {
+    font-size: 1rem;
+  }
+
+  .resume .row2 .left .skills .progress {
+    margin: 1rem 0 1.6rem;
+    height: 1.6rem;
+  }
+
+  .resume .row2 .left .skills .progress span {
+    top: 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  .resume .row2 .right .coding-skills .skills {
+    padding-bottom: 3.5rem;
+    margin-top: 1.7rem;
+  }
+
+  .resume .row2 .right .coding-skills .skills div {
+    width: 6.2rem;
+    height: 6.2rem;
+    margin-right: 2rem;
+  }
+
+  .resume .row2 .right .coding-skills .skills .label {
+    margin-left: 1.2rem;
+  }
+
+  .resume .row2 .right .communication-skills div span {
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+
+  .resume .resume-container a {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+
+  /*about*/
+
+  .about {
+    padding: 10rem 10% 10rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .about .right {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about .right .heading {
+    font-size: 2.4rem;
+    padding-top: 6rem;
+  }
+
+  .about .right h4 {
+    font-size: 1.8rem;
+    padding-bottom: 1.8rem;
+    font-weight: normal;
+  }
+
+  .about .right p {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+  .about .right .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about .right .buttons a {
+    margin-top: 2rem;
+    margin-right: 0;
+    padding: 0.75rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  .about .right .buttons a:first-child {
+    margin-right: 8%;
+  }
+
+  /*testimonials*/
+
+  .testimonials {
+    text-align: center;
+    padding: 3rem 10% 7rem;
+  }
+
+  .testimonials p {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .testimonials div {
+    left: 25%;
+    bottom: -49%;
+  }
+
+  .testimonials div img {
+    width: 50%;
+  }
+
+  .testimonials div h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .testimonials div p {
+    font-size: 1.4rem;
+  }
+
+  /*blog*/
+  .blog {
+    padding: 0 10%;
+    margin-top: 18.3rem;
+  }
+
+  .blog .heading {
+    padding-bottom: 3.3rem;
+  }
+
+  .blog a.btn {
+    display: none;
+  }
+
+  /*getIntouch*/
+
+  .getInTouch {
+    padding: 2.3rem 10% 0;
+  }
+
+  .getInTouch>.heading {
+    padding-bottom: 3.8rem;
+  }
+
+  .getInTouch .row .heading {
+    font-size: 1.8rem;
+    padding-bottom: 1.1rem;
+  }
+
+  .getInTouch .row .left p {
+    font-size: 1.8rem;
+  }
+
+  .getInTouch .row .left p:nth-child(2) {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .getInTouch .row .left p:nth-child(3) {
+    padding-bottom: 1.5rem;
+  }
+
+  .getInTouch .row .left .socials {
+    padding-top: 2rem;
+  }
+
+  .getInTouch .row .left .socials i {
+    margin-right: 2rem;
+  }
+
+  .getInTouch .row .right {
+    padding-top: 3.7rem;
+    font-size: 1.4rem;
+  }
+
+  .getInTouch .form-control {
+    font-size: 1.4rem;
+  }
+
+  .getInTouch .row .right input {
+    padding: 0;
+  }
+
+  .getInTouch .row .right button.btn {
+    font-size: 1rem;
+  }
+
+  /*footer*/
+  footer {
+    padding: 0 10%;
+    height: 25.8rem;
+  }
+
+  footer nav {
+    height: 0;
+    margin-left: 5%;
+  }
+
+  footer nav>ul {
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+
+  footer nav ul li .naviga {
+    flex-direction: column;
+  }
+
+  footer nav ul li .naviga li {
+    margin-bottom: 10%;
+  }
+
+  footer nav ul>li ul li a {
+    padding: 6rem 2rem;
+  }
+
+  footer nav ul li .socials {
+    padding: 0rem 3rem;
   }
 }
